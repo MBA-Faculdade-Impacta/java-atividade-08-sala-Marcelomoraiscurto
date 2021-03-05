@@ -1,6 +1,7 @@
 package br.com.impacta.lab;
 
 import static org.junit.Assert.assertEquals;
+import br.com.impacta.models.*;
 
 import java.util.ArrayList;
 import org.junit.Test;
@@ -10,7 +11,7 @@ class JavaSpringTemplateApplicationTests {
 	@Test
 	public void shouldHavePFWithInterfacePessoa() {
 		
-		Pessoa pf = new PessoaFisica();
+  	Pessoa pf = new PessoaFisica();
 		pf.setDocumento("45875412575");
 		pf.setTipo("PF");
 		

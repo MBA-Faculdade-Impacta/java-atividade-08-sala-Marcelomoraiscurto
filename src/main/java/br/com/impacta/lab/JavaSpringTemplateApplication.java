@@ -1,5 +1,7 @@
 package br.com.impacta.lab;
 
+import br.com.impacta.models.*;
+
 public class JavaSpringTemplateApplication {
 
 	public static void main(String[] args) {
@@ -33,9 +35,15 @@ public class JavaSpringTemplateApplication {
 		pf.setDocumento("45875412575");
 		pf.setTipo("PF");
 		
-		
-		System.out.println(pf.falarDocumento());
-		System.out.println(pf.getTipo());
+		Pessoa pj = new PessoaJuridica();
+		pj.setDocumento("54309854389");
+		pj.setTipo("PJ");
+
+		System.out.println("Primeira pessoa: "+ pf.falarDocumento());
+		System.out.println("Primeira pessoa: "+ pf.getTipo());
+
+    System.out.println("Segunda pessoa: "+ pj.falarDocumento());
+		System.out.println("Segunda pessoa: "+ pj.getTipo());
 	}
 
 }
