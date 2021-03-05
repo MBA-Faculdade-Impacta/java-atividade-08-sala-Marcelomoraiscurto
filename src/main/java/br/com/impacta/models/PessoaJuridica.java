@@ -7,6 +7,10 @@ public class PessoaJuridica implements Pessoa {
     private String documento;
 		private String tipo;
 
+  public PessoaJuridica(String doc , String tipo){
+    this.documento = doc;
+    this.tipo = tipo;
+  }
 
     public void setDocumento(String doc){
 

@@ -31,13 +31,13 @@ public class JavaSpringTemplateApplication {
 		 * 
 		 */
 		
-		Pessoa pf = new PessoaFisica();
-		pf.setDocumento("45875412575");
-		pf.setTipo("PF");
+		Pessoa pf = new PessoaFisica("45875412575", "PF");
+		//pf.setDocumento("45875412575");
+		//pf.setTipo("PF");
 		
-		Pessoa pj = new PessoaJuridica();
-		pj.setDocumento("54309854389");
-		pj.setTipo("PJ");
+		Pessoa pj = new PessoaJuridica("54309854389" , "PJ");
+		//pj.setDocumento("54309854389");
+		//pj.setTipo("PJ");
 
 		System.out.println("Primeira pessoa: "+ pf.falarDocumento());
 		System.out.println("Primeira pessoa: "+ pf.getTipo());

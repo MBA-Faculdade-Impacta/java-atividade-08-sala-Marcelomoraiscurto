@@ -7,6 +7,10 @@ public class PessoaFisica implements Pessoa {
     private String documento;
 		private String tipo;
 
+  public PessoaFisica(String doc , String tipo){
+    this.documento = doc;
+    this.tipo = tipo;
+  }
 
     public void setDocumento(String doc){
 
@@ -23,14 +27,9 @@ public class PessoaFisica implements Pessoa {
 
       this.tipo = tipo;
     }
-    
+
     public String getTipo(){
       return this.tipo;
     }
-
-  
-
-
-
 
 }
